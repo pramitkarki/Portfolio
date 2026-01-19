@@ -131,7 +131,7 @@ export const Navbar = () => {
               </div>
             )}
 
-            <div className="hidden sm:block">
+            <div className="hidden md:block">
               {isResumePage ? (
                 <a
                   href="/docs/Pramit_Karki_Resume.pdf"
@@ -151,7 +151,7 @@ export const Navbar = () => {
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="sm:hidden p-2 rounded-lg hover:bg-muted/50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50"
+            className="md:hidden p-2 rounded-lg hover:bg-muted/50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50"
             aria-label="Toggle mobile menu"
           >
             {isMenuOpen ? (
@@ -170,12 +170,81 @@ export const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`sm:hidden overflow-hidden transition-all duration-300 ease-out ${
-            isMenuOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${
+            isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           <div className="pt-4 pb-2 border-t border-border/50 mt-4">
             <div className="space-y-3">
+              {!isResumePage && (
+                <>
+                  <Button
+                    variant="outline"
+                    asChild
+                    className="w-full border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-200"
+                  >
+                    <a
+                      href="#about"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="flex items-center justify-center"
+                    >
+                      About
+                    </a>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    asChild
+                    className="w-full border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-200"
+                  >
+                    <a
+                      href="#skills"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="flex items-center justify-center"
+                    >
+                      Skills
+                    </a>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    asChild
+                    className="w-full border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-200"
+                  >
+                    <a
+                      href="#experience"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="flex items-center justify-center"
+                    >
+                      Experience
+                    </a>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    asChild
+                    className="w-full border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-200"
+                  >
+                    <a
+                      href="#projects"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="flex items-center justify-center"
+                    >
+                      Projects
+                    </a>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    asChild
+                    className="w-full border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-200"
+                  >
+                    <a
+                      href="#contact"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="flex items-center justify-center"
+                    >
+                      Contact
+                    </a>
+                  </Button>
+                </>
+              )}
               <Button
                 variant="outline"
                 asChild
