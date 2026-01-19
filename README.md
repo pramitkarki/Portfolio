@@ -33,8 +33,15 @@
 
 A modern, responsive portfolio website built with **Next.js 15** and **React 19**, featuring stunning dark aesthetics and smooth animations. This project showcases my professional journey as a Software Developer Engineer with 2 years of experience at SiemensEDA, specializing in performance optimization and scalable solutions.
 
-**🌐 Live Demo:** Coming Soon
+**🌐 Live Demo:** [pramitkarki.vercel.app](https://pramitkarki.vercel.app)
 **📱 GitHub:** [github.com/pramitkarki/Portfolio](https://github.com/pramitkarki/Portfolio)
+
+### 🔍 SEO Optimized
+- ✅ Sitemap for search engines
+- ✅ Robots.txt configured
+- ✅ Open Graph metadata
+- ✅ Twitter Card support
+- ✅ Semantic HTML structure
 
 ## ✨ Features
 
