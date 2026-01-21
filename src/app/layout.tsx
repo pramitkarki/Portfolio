@@ -73,6 +73,20 @@ export const metadata: Metadata = {
     ],
     shortcut: "/favicon.ico",
     apple: [{ url: "/apple-180.png", sizes: "180x180", type: "image/png" }],
+    other: [
+      {
+        rel: "android-192",
+        url: "/android-192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        rel: "android-512",
+        url: "/android-512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
   },
   manifest: "/manifest.json",
 };
