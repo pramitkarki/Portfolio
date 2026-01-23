@@ -98,6 +98,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Pramit Karki Portfolio",
+              url: "https://pramitkarki.vercel.app",
+              author: {
+                "@type": "Person",
+                name: "Pramit Karki",
+              },
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${mono.variable} ${nasalization.variable} ${quentine.variable} font-sans`}
         suppressHydrationWarning
